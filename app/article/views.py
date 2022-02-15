@@ -18,7 +18,6 @@ from django.core.paginator import Paginator
 from django.db.models import Q
 # Comment 模型
 from app.comment.models import Comment
-
 from app.comment.forms import CommentForm
 
 # 通用类视图

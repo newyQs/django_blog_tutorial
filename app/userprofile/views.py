@@ -5,9 +5,9 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 
-from .forms import UserLoginForm, UserRegisterForm
-from .forms import ProfileForm
-from .models import Profile
+from app.userprofile.forms import UserLoginForm, UserRegisterForm
+from app.userprofile.forms import ProfileForm
+from app.userprofile.models import Profile
 
 
 # 用户登录

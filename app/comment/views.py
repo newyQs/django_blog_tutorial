@@ -2,9 +2,9 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, JsonResponse
 
-from .forms import CommentForm
+from app.comment.forms import CommentForm
+from app.comment.models import Comment
 from app.article.models import ArticlePost
-from .models import Comment
 
 from notifications.signals import notify
 from django.contrib.auth.models import User

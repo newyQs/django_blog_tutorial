@@ -1,11 +1,8 @@
-# 引入表单类
 from django import forms
-# 引入 User 模型
 from django.contrib.auth.models import User
-# 引入UserCreationForm
 from django.contrib.auth.forms import UserCreationForm
-# 引入 Profile 模型
-from .models import Profile
+
+from app.userprofile.models import Profile
 
 
 # 登录表单，继承了 forms.Form 类

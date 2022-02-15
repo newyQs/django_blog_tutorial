@@ -1,6 +1,5 @@
 from django.urls import path
-# 引入views.py
-from . import views
+from app.article import views
 
 app_name = 'article'
 

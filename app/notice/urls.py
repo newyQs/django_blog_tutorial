@@ -1,6 +1,6 @@
 from django.urls import path
 # 引入views.py
-from . import views
+from app.notice import views
 
 app_name = 'notice'
 
