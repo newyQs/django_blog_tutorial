@@ -3,13 +3,13 @@ python:
   - "3.6"
 services: sqlite
 env:
-  - DJANGO=2.1 
+  - DJANGO=2.1
   - DB=sqlite
-before_install: 
-  - pip install codecov 
+before_install:
+  - pip install codecov
   - pip install coverage
 install: pip install -r requirements.txt
-script: 
+script:
   - python manage.py test
 after_success:
   - codecov

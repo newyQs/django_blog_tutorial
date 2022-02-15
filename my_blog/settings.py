@@ -53,10 +53,10 @@ INSTALLED_APPS = [
     'mptt',
     'notifications',
     # 项目app
-    'article',
-    'userprofile',
-    'comment',
-    'notice',
+    'app.article',
+    'app.userprofile',
+    'app.comment',
+    'app.notice',
 ]
 
 MIDDLEWARE = [

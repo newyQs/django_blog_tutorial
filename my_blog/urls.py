@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 
 import notifications.urls
 
-from article.views import article_list
+from app.article.views import article_list
 
 
 # 存放了映射关系的列表
@@ -18,15 +18,15 @@ urlpatterns = [
     # 重置密码app
     path('password-reset/', include('password_reset.urls')),
     # 新增代码，配置app的url
-    path('article/', include('article.urls', namespace='article')),
+    path('article/', include('app.article.urls', namespace='article')),
     # 用户管理
-    path('userprofile/', include('userprofile.urls', namespace='userprofile')),
+    path('userprofile/', include('app.userprofile.urls', namespace='userprofile')),
     # 评论
-    path('comment/', include('comment.urls', namespace='comment')),
+    path('comment/', include('app.comment.urls', namespace='comment')),
     # djang-notifications
     path('inbox/notifications/', include(notifications.urls, namespace='notifications')),
     # notice
-    path('notice/', include('notice.urls', namespace='notice')),
+    path('notice/', include('app.notice.urls', namespace='notice')),
     # django-allauth
     path('accounts/', include('allauth.urls')),
 ]
